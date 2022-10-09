@@ -9,11 +9,9 @@ public class Distance {
         System.out.println("Distance from ("+ x + ", " + y +") to (0, 0) = " + distance);
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter value x : ");
-        int x = sc.nextInt();
-        System.out.println("Enter value y : ");
-        int y = sc.nextInt();
+        int x = Integer.parseInt(args[0]);
+        int y = Integer.parseInt(args[1]);
+       calculateDistance(x,y);
        calculateDistance(x,y);
     }
 }
